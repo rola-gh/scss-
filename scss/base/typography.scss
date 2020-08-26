@@ -1,0 +1,62 @@
+
+body{
+  padding: 3rem;
+  font-family: "lato" , sans-serif;
+}
+
+.header-d {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "lato", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+  .header-main {
+    letter-spacing: 26px;
+    animation-name: moveleft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    font-size: 50px;
+  }
+
+  .header-sub {
+    letter-spacing: 10px;
+    font-size: 25px;
+    animation-name: moveright;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+
+
+  }
+ .heading-secondery{
+   font-size: 3rem;
+   text-transform: uppercase;
+   font-weight: 700;
+   display: inline-block;
+   background-image: linear-gradient(to right, $color-primary-light , $color-primary-dark);
+   -webkit-background-clip: text;
+   color: transparent;
+   letter-spacing: .2rem;
+   transition: all .2s;
+    &:hover{
+      transform: skewY(2deg) skewX(15deg) scale(1.1);
+      text-shadow:  .5rem 1rem 2rem rgba($color-black,0.2) ;
+    }
+ }
+ .heading-tertiry{
+   font-size: 1.6rem;
+   font-weight:700;
+   text-transform: uppercase;
+ }
+ .paraghraph{
+  font-size: 1rem;
+
+   &:not(:last-child){
+     margin-bottom: 3rem;
+   }
+ }
